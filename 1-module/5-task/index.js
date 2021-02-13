@@ -9,7 +9,7 @@ function truncate(str, maxlength) {
   let lengthStr = str.length;
 
   if (lengthStr > maxlength) {
-    return str.slice(0, 19) + "…";
+    return str.slice(0, maxlength - 1) + "…";
   } else {
     return str;
   }
