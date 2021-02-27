@@ -15,7 +15,7 @@ function isValid(name) {
 
   if (!!name == false){
     return false;
-  } else if (name.length <= 4){
+  } else if (name.length < 4){
     return false;
   } else if (name.indexOf(" ") > -1){
     return false;

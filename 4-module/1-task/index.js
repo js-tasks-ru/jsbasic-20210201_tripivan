@@ -1,3 +1,10 @@
 function makeFriendsList(friends) {
-  // ваш код...
+debugger
+  const ul = document.createElement('ul');
+  
+for (let item of friends){
+  ul.insertAdjacentHTML("beforeEnd",`<li>${item.firstName} ${item.lastName}</li>`);
+};
+
+return ul;
 }
