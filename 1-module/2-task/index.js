@@ -12,8 +12,17 @@ function print(text) {
  * @returns {boolean}
  */
 function isValid(name) {
-  // ваш код...
-}
+
+  if (!!name == false){
+    return false;
+  } else if (name.length < 4){
+    return false;
+  } else if (name.indexOf(" ") > -1){
+    return false;
+  }  else {
+    return true;
+  }
+ }
 
 function sayHello() {
   let userName = prompt('Введите ваше имя');
@@ -23,4 +32,6 @@ function sayHello() {
   } else {
     print('Некорректное имя');
   }
-}
+};
+
+
